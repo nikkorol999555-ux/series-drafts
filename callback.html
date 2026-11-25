@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Authorization code</title>
+<body style="font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px">
+<h1>Series to Drafts</h1>
+<p>Copy this whole address from the browser bar (or the code below) and paste it into the terminal. Nothing is sent anywhere from this page.</p>
+<pre id="o" style="white-space:pre-wrap;word-break:break-all;background:#eee;padding:12px"></pre>
+<script>var q=new URLSearchParams(location.search);document.getElementById('o').textContent=q.get('code')?('code='+q.get('code')+'\nstate='+q.get('state')):(q.get('error_description')||'No code in the address.');</script>
+</body></html>
